@@ -34,7 +34,7 @@ color: rgb(255, 255, 255);</string>
     <string>Light for plants</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_in_3">
+  <widget class="QPushButton" name="selectl">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -52,7 +52,7 @@ background-color: rgba(120, 224, 255, 100);</string>
     <string>Select light</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_in_4">
+  <widget class="QPushButton" name="addl">
    <property name="geometry">
     <rect>
      <x>250</x>

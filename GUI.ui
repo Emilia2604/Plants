@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>bgwidget</class>
- <widget class="QDialog" name="bgwidget">
+ <class>bgwidgets</class>
+ <widget class="QDialog" name="bgwidgets">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget#bgwidget{
+   <string notr="true">QWidget#bgwidgets{
 background-color: qlineargradient(spread:pad, x1:0.239, y1:0.0735455, x2:0.940761, y2:1, stop:0 rgba(0, 135, 135, 255), stop:1 rgba(255, 255, 255, 255));}</string>
   </property>
   <widget class="QLabel" name="label_2">
@@ -154,9 +154,9 @@ background-color: rgba(120, 224, 255, 50);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>70</y>
+      <y>60</y>
       <width>101</width>
-      <height>16</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
