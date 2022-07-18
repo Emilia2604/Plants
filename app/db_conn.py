@@ -17,6 +17,26 @@ def cr_name_plant(name_plant):
     return cut[0:2]
 
 @db_con
+def plant_list(cur):
+    plants=[]
+    sql_plant_list="""SELECT name,variety FROM public.plants"""
+    cur.execute(sql_plant_list)
+    records=cur.fetchall()
+    result = [row[0]+' '+row[1] for row in records]
+    return result
+
+@db_con
+def find_spectrum(cur,stage,plant):
+    data_set=[find_id_plant(plant),stage]
+    sql_find_set="""SELECT value, led FROM public.light WHERE plant_id=%s AND stage=%s ORDER BY led ASC"""
+    cur.execute(sql_find_set,data_set)
+    records=cur.fetchall()
+    value=[row[0] for row in records]
+    led = [row[1] for row in records]
+    result=dict(zip(led,value))
+    return result
+
+@db_con
 def find_id_plant(cur,plant):
     name_plant=cr_name_plant(plant)
     sql_find_id="""SELECT id FROM public.plants WHERE name=%s AND variety=%s"""
@@ -27,20 +47,25 @@ def find_id_plant(cur,plant):
     try:
         return(id_plant[0])
     except:
-        return None
+        print('This plant is not here yet')
 
 @db_con
 def add_plant(cur,name):
     lis_plant=cr_name_plant(name)
-    permi=find_id_plant()
-    if permi==None:
+    try:
+        permi=find_id_plant(lis_plant)
+    except:
         sql_plant="""INSERT INTO plants (name,variety) VALUES(%s,%s)"""
         cur.execute(sql_plant,lis_plant)
-    else:
+    finally:
         print('This plant is already here')
 
 @db_con
 def add_set(cur,list_settings):
-    list_settings[-1]=find_id_plant(list_settings[-1])
+    try:
+        list_settings[-1]=find_id_plant(list_settings[-1])
+    except:
+        add_plant(list_settings[-1])
+        list_settings[-1]=find_id_plant(list_settings[-1])
     sql_light="""INSERT INTO light (stage,led,value,plant_id) VALUES(%s,%s,%s,%s)"""
     cur.execute(sql_light,list_settings)

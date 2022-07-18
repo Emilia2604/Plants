@@ -34,7 +34,7 @@ color: rgb(255, 255, 255);</string>
     <string>Light for plants</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_in">
+  <widget class="QPushButton" name="b_flowering">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -52,7 +52,7 @@ background-color: rgba(120, 224, 255, 50);</string>
     <string>Flowering</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_in_2">
+  <widget class="QPushButton" name="b_vegetation">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -70,7 +70,7 @@ background-color: rgba(120, 224, 255, 50);</string>
     <string>Vegetation</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_in_3">
+  <widget class="QPushButton" name="b_germination">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -88,7 +88,7 @@ background-color: rgba(120, 224, 255, 50);</string>
     <string>Germination</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_in_4">
+  <widget class="QPushButton" name="b_fruits">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -118,7 +118,7 @@ background-color: rgba(120, 224, 255, 50);</string>
    <property name="title">
     <string>LEDs</string>
    </property>
-   <widget class="QSpinBox" name="spinBox1">
+   <widget class="QSpinBox" name="spin_uv">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -214,7 +214,7 @@ background-color: rgba(120, 224, 255, 50);</string>
      <string>White 5500K</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_2">
+   <widget class="QSpinBox" name="spin_royal">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -230,7 +230,7 @@ background-color: rgba(120, 224, 255, 50);</string>
      <number>100</number>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_3">
+   <widget class="QSpinBox" name="spin_red">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -246,7 +246,7 @@ background-color: rgba(120, 224, 255, 50);</string>
      <number>100</number>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_4">
+   <widget class="QSpinBox" name="spin_photo">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -262,7 +262,7 @@ background-color: rgba(120, 224, 255, 50);</string>
      <number>100</number>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_5">
+   <widget class="QSpinBox" name="spin_white">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -279,7 +279,7 @@ background-color: rgba(120, 224, 255, 50);</string>
     </property>
    </widget>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="plantsbox">
    <property name="geometry">
     <rect>
      <x>50</x>

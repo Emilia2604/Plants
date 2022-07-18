@@ -34,7 +34,7 @@ color: rgb(255, 255, 255);</string>
     <string>Add light for plants</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="name_plant">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -76,7 +76,7 @@ color: rgb(255, 255, 255);</string>
    <property name="title">
     <string>LEDs</string>
    </property>
-   <widget class="QSpinBox" name="spinBox1">
+   <widget class="QSpinBox" name="uv_spin">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -172,7 +172,7 @@ color: rgb(255, 255, 255);</string>
      <string>White 5500K</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_2">
+   <widget class="QSpinBox" name="royal_spin">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -188,7 +188,7 @@ color: rgb(255, 255, 255);</string>
      <number>100</number>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_3">
+   <widget class="QSpinBox" name="red_spin">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -204,7 +204,7 @@ color: rgb(255, 255, 255);</string>
      <number>100</number>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_4">
+   <widget class="QSpinBox" name="photo_spin">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -220,7 +220,7 @@ color: rgb(255, 255, 255);</string>
      <number>100</number>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox1_5">
+   <widget class="QSpinBox" name="white_spin">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -237,7 +237,7 @@ color: rgb(255, 255, 255);</string>
     </property>
    </widget>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="stage_box">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -250,7 +250,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 100);</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="sign_in_3">
+  <widget class="QPushButton" name="add_b">
    <property name="geometry">
     <rect>
      <x>50</x>
